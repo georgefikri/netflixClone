@@ -1,0 +1,37 @@
+.row {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* that padding will make the hover not getting cut by the height of the container */
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster {
+    width: 100%;
+    /* will keep the aspect ratio so regardless of how much i resize it, will keep the dimensions */
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.09);
+}
