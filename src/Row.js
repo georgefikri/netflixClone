@@ -11,14 +11,11 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   useEffect(() => {
     async function fetchData() {
-      // await here is telling axios wait for the response to come back then do something
       const request = await axios.get(fetchUrl);
       setMovies(request.data.results);
       return request;
     }
     fetchData();
-    /* if there is any variable that has been pulled from outside the useEffect (used inside) have to 
-    add it as a dependency */
   }, [fetchUrl]);
 
   const opts = {

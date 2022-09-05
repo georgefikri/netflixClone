@@ -31,17 +31,13 @@ function Banner() {
   return (
     <header className="banner" style={bannerStyle}>
       <div className="banner_contents">
-        {/* header will have background image */}
-        {/* title */}
         <h1 className="banner_title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        {/* div 2 buttons */}
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
         </div>
-        {/* description */}
         <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
       <div className="banner_fadeButton"></div>
