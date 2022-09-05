@@ -7,6 +7,8 @@
 
 ## Check the project on github pages
 
+- https://georgefikri.github.io/netflixClone/
+
 ## Packages Installed
 
 - [https://www.npmjs.com/package/react-youtube] (Simple React component acting as a thin layer over the YouTube IFrame Player API)
