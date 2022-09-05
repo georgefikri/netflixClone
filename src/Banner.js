@@ -28,7 +28,6 @@ function Banner() {
     backgroundPosition: "center center",
   };
 
-  console.log(movie);
   return (
     <header className="banner" style={bannerStyle}>
       <div className="banner_contents">
